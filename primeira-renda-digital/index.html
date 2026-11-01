@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Primeira Renda Digital — Área do cliente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--bg2:#f1faf4;--ink:#10201a;--mute:#4b5d54;--g:#059669;--g2:#047857;--lime:#a3e635;--line:#d3eadb;--card:#ffffff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a14;--bg2:#10261d;--ink:#eaf6ee;--mute:#a4bbae;--g:#34d399;--g2:#10b981;--line:#1f3d30;--card:#0f2219;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1a14;--bg2:#10261d;--ink:#eaf6ee;--mute:#a4bbae;--g:#34d399;--g2:#10b981;--line:#1f3d30;--card:#0f2219;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;background:var(--g2);color:#fff;font-weight:700;font-size:18px;padding:16px 34px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--g)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.btn.sm{font-size:15px;padding:11px 22px}
+.hero{background:var(--bg2);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:56px;min-height:78vh}
+.hero h1{font-size:clamp(34px,6vw,56px)}
+.hero p.lead{font-size:19px;color:var(--mute);max-width:46ch;margin:18px 0 28px}
+.hello{font-weight:700;color:var(--g2);margin:0 0 10px}
+.book{justify-self:center;width:min(100%,270px);aspect-ratio:3/4.1;background:#059669;border-radius:4px 10px 10px 4px;border-left:14px solid #064e3b;padding:26px 20px;color:#fff;display:flex;flex-direction:column;box-shadow:0 18px 0 -8px rgba(6,78,59,.18)}
+.book .tag{align-self:flex-start;background:#a3e635;color:#064e3b;font-weight:700;font-size:12px;padding:4px 12px;border-radius:99px}
+.book .t{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:34px;line-height:1.05;margin:auto 0 12px}
+.book .t b{color:#a3e635}
+.book .s{font-size:12.5px;opacity:.92}
+.steps{padding:56px 0 8px}
+.steps h2{font-size:28px;margin-bottom:22px}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.row div{border-top:3px solid var(--g);padding-top:12px}
+.row h3{font-size:19px;margin-bottom:6px}
+.row p{margin:0;color:var(--mute);font-size:15px}
+.foot{padding:48px 0 60px;color:var(--mute);font-size:13px}
+#conteudo{display:none}
+body.in #boasvindas{display:none}
+body.in #conteudo{display:block}
+.top{background:var(--bg2);border-bottom:1px solid var(--line);padding:44px 0 34px}
+.top h1{font-size:clamp(30px,5vw,44px)}
+.top p{color:var(--mute);margin:10px 0 0;max-width:60ch}
+.list{display:grid;gap:14px;padding:32px 0}
+.vol{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.n{width:46px;height:46px;border-radius:50%;background:var(--g2);color:#fff;display:grid;place-items:center;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:20px}
+.vol h3{font-size:20px}
+.vol p{margin:4px 0 0;color:var(--mute);font-size:14.5px}
+.tip{background:var(--bg2);border-left:4px solid var(--g);padding:16px 18px;margin-bottom:14px;font-size:15px}
+.back{background:none;border:0;color:var(--g2);font:inherit;font-weight:700;cursor:pointer;padding:0;margin-bottom:14px}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:36px}.book{order:-1;width:200px}.row{grid-template-columns:1fr}.vol{grid-template-columns:auto 1fr}.vol .btn{grid-column:1/-1;text-align:center}}
+@media(prefers-reduced-motion:no-preference){.hero h1{animation:in .6s ease both}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<main id="boasvindas">
+<section class="hero"><div class="wrap">
+<div>
+<p class="hello">Seja bem-vindo(a)! Sua compra foi confirmada.</p>
+<h1>Primeira Renda Digital</h1>
+<p class="lead">O guia prático para ganhar dinheiro na internet começando do zero. Aqui está todo o seu material, organizado em um só lugar. Clique em começar e siga na ordem.</p>
+<button class="btn" id="go">Começar agora</button>
+</div>
+<div class="book" aria-hidden="true"><span class="tag">Guia prático</span><div class="t">PRIMEIRA RENDA <b>DIGITAL</b></div><div class="s">O guia prático para ganhar dinheiro na internet começando do zero</div></div>
+</div></section>
+<section class="steps"><div class="wrap">
+<h2>Como aproveitar melhor</h2>
+<div class="row">
+<div><h3>Leia na ordem</h3><p>Os 5 volumes seguem uma sequência: do básico até o plano de 30 dias.</p></div>
+<div><h3>Pratique cada capítulo</h3><p>No fim de cada capítulo há uma atividade. Faça antes de avançar.</p></div>
+<div><h3>Siga o plano de 30 dias</h3><p>Está no Volume 5. Marque o que concluir e acompanhe seu progresso.</p></div>
+</div>
+</div></section>
+<div class="wrap foot">Material educativo. Os resultados variam conforme o esforço, o nicho e a execução de cada pessoa, e não há garantia de ganhos.</div>
+</main>
+
+<main id="conteudo">
+<section class="top"><div class="wrap">
+<button class="back" id="back">← Voltar às boas-vindas</button>
+<h1>Seu material</h1>
+<p>Clique em cada volume para abrir. Salve esta página nos favoritos para voltar quando quiser.</p>
+</div></section>
+<section class="wrap list">
+<div class="tip">Comece pelo Volume 1 e vá avançando. Cada volume abre em PDF no seu navegador. Use o ícone de download para guardar no seu aparelho.</div>
+<div class="vol"><div class="n">1</div><div><h3>Volume 1: Fundamentos</h3><p>Antes de começar, mercado digital e como escolher seu nicho.</p></div><a class="btn sm" href="pdfs/volume-1.pdf" target="_blank" rel="noopener">Abrir PDF</a></div>
+<div class="vol"><div class="n">2</div><div><h3>Volume 2: Ferramentas, afiliados e ebooks</h3><p>Ferramentas gratuitas, como ser afiliado e como criar e vender ebooks.</p></div><a class="btn sm" href="pdfs/volume-2.pdf" target="_blank" rel="noopener">Abrir PDF</a></div>
+<div class="vol"><div class="n">3</div><div><h3>Volume 3: IA, conteúdo e divulgação</h3><p>Inteligência artificial, TikTok e Instagram e como divulgar sem aparecer.</p></div><a class="btn sm" href="pdfs/volume-3.pdf" target="_blank" rel="noopener">Abrir PDF</a></div>
+<div class="vol"><div class="n">4</div><div><h3>Volume 4: Vídeo, serviços e página de vendas</h3><p>Edição de vídeos, prestação de serviços e como montar sua página de vendas.</p></div><a class="btn sm" href="pdfs/volume-4.pdf" target="_blank" rel="noopener">Abrir PDF</a></div>
+<div class="vol"><div class="n">5</div><div><h3>Volume 5: Clientes, plano de 30 dias e anexos</h3><p>Primeiros clientes, plano de ação de 30 dias, conclusão e bônus.</p></div><a class="btn sm" href="pdfs/volume-5.pdf" target="_blank" rel="noopener">Abrir PDF</a></div>
+</section>
+<div class="wrap foot">Dúvidas sobre o acesso? Fale com o suporte: [SEU E-MAIL OU WHATSAPP]</div>
+</main>
+<script>
+function show(){var on=location.hash==="#conteudo";document.body.classList.toggle("in",on);window.scrollTo(0,0)}
+document.getElementById("go").onclick=function(){location.hash="conteudo"};
+document.getElementById("back").onclick=function(){location.hash="inicio"};
+window.addEventListener("hashchange",show);show();
+</script>
+</body>
+</html>
